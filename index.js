@@ -4,39 +4,41 @@
 
 // ### Exercise 1:
 // - Use a for loop to print numbers -3 through 8
-// for(let i=-3; i<=8; i++){
-//     console.log(i)
+for (let i = -3; i <= 8; i++) {
+    console.log(i)
 
-// }
+}
 
 // ### Exercise 2:
 // - Use a for loop to count from -5 to 5 three times in a row
-
-// for(let i=-5; i<=5; i++){
-//     console.log(i)
-// }
+// !! : missing your nested loop (make this happen 3 times) - check out the answer gist for an example
+for (let i = -5; i <= 5; i++) {
+    console.log(i)
+}
 
 // ### Exercise 3:
 // - Use a for loop to print only even numbers from -50 to 50
 
-// for(let i=-50; i<=50;i=i+2){
-    
-//     console.log(i)
-    
-// }
+for (let i = -50; i <= 50; i = i + 2) {
+
+    console.log(i)
+
+}
 
 
 // ### Exercise 4:
 // Start with the following array:
-// `let high_scores = [2112, 1024, 9000, 9001, 7200, 2600, 10000]`
+`let high_scores = [2112, 1024, 9000, 9001, 7200, 2600, 10000]`
 
-let scores=[2112, 1024, 9000, 9001, 7200, 2600, 10000]
+let scores = [2112, 1024, 9000, 9001, 7200, 2600, 10000]
 // - Use a for loop to print each score
-for(i=0; i<=scores.length; i++){
+for (i = 0; i <= scores.length; i++) {
     console.log(scores[i])
-    if (scores > 9000){
+    if (scores > 9000) {
+        // !! : you should be comparing each value in score to 9000
         console.log(score + 'Over 9000!')
-}
+    }
+} // !! : you were missing a curly brace here
 
 
 // - If the score is greater than 9000 print the score and the text `OVER 9000!`
@@ -64,42 +66,41 @@ for(i=0; i<=scores.length; i++){
 // ### Exercise A:
 // - Print -10 through 5 using a counter and while loop.
 
-// let i= -10
-// while(i<=5){
-// console.log(i)
-// i=i+1
-// }
+let i = -10
+while (i <= 5) {
+    console.log(i)
+    i = i + 1
+}
 
 // ### Exercise B:
 // - Write a While loop that counts backwards from 10 to 0
 
-// let i=10
-// while(i>=0){
-//     console.log(i)
-//     i=i-1
-// }
+let i = 10
+while (i >= 0) {
+    console.log(i)
+    i = i - 1
+}
 
-// // - Log the current count at the end of each iteration EXCEPT if the current count is ```5```
+// - Log the current count at the end of each iteration EXCEPT if the current count is ```5```
 
-// if(i==5){
-//     console.log('five') 
-// }
+if (i == 5) {
+    console.log('five')
+}
 
 
 // ### Exercise C:
 // - Create an empty `name_array`
-// let name_array=['']
-// // - Ask the user ```Enter a word.
-// let userInput=prompt("Enter a word")
-// let q=prompt("ENTER Q TO QUIT")
-// //  Enter 'q' to quit.``` Add each word they enter to the array
-// let userWord={userInput}
-// // // - Create a while loop that will keep asking for words to add to the array until they enter 'q'
-// while(name_array!=q)
-// console.log(userInput)
-// {
+let name_array = ['']
+// - Ask the user ```Enter a word.
+let userInput = prompt("Enter a word")
+let q = prompt("ENTER Q TO QUIT")
+//  Enter 'q' to quit.``` Add each word they enter to the array
+let userWord = { userInput } // !! : not quite sure what you were intending here but arrays have sqaure brackets [] and you should not initally push the user input
+// // - Create a while loop that will keep asking for words to add to the array until they enter 'q'
+while (name_array != q)
+    // you should be prompting the user again with each iteration
+    console.log(userInput)
+{
 
-// }
-// // - When the user enters 'q' use a **for** loop to print each word from the array
-
-
+}
+// - When the user enters 'q' use a **for** loop to print each word from the array
