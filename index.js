@@ -34,7 +34,10 @@ let scores=[2112, 1024, 9000, 9001, 7200, 2600, 10000]
 // - Use a for loop to print each score
 for(i=0; i<=scores.length; i++){
     console.log(scores[i])
+    if (scores > 9000){
+        console.log(score + 'Over 9000!')
 }
+
 
 // - If the score is greater than 9000 print the score and the text `OVER 9000!`
 // Expected Output:
